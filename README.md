@@ -152,6 +152,3 @@ All models are downloaded automatically on first run and cached locally. Both CP
 
 ---
 
-## License
-
-MIT License. See [LICENSE](LICENSE) for details.

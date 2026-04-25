@@ -1,0 +1,143 @@
+2026-04-25 01:17:23,849 - main - INFO - Initializing models...
+2026-04-25 01:17:23,851 - models.enhancer - INFO - Downloading Zero-DCE model...
+2026-04-25 01:17:23,937 - watchfiles.main - INFO - 4 changes detected
+2026-04-25 01:17:28,014 - models.enhancer - INFO - Zero-DCE model loaded
+2026-04-25 01:17:28,081 - watchfiles.main - INFO - 2 changes detected
+2026-04-25 01:41:33,170 - models.depth_estimator - INFO - MiDaS DPT Large model loaded
+2026-04-25 01:41:35,718 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:41:36,338 - watchfiles.main - INFO - 3 changes detected
+2026-04-25 01:41:36,359 - models.object_detector - INFO - YOLOv8 model loaded
+2026-04-25 01:41:36,407 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientnet_b0.ra_in1k)
+2026-04-25 01:41:36,994 - huggingface_hub.file_download - WARNING - Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+2026-04-25 01:41:40,611 - timm.models._hub - INFO - [timm/efficientnet_b0.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-04-25 01:41:40,702 - models.pothole_detector - INFO - Using pretrained EfficientNet (not fine-tuned for potholes)
+2026-04-25 01:41:40,804 - comtypes.client._code_cache - INFO - Could not import comtypes.gen, trying to create it.
+2026-04-25 01:41:40,806 - comtypes.client._code_cache - INFO - Created comtypes.gen directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 01:41:40,809 - comtypes.client._code_cache - INFO - Writing __init__.py file: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen\__init__.py'
+2026-04-25 01:41:40,811 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 01:41:40,868 - comtypes.client._generate - INFO - Could not import comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4: No module named 'comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4'
+2026-04-25 01:41:40,872 - comtypes.client._generate - INFO - # Generating comtypes.gen._C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4
+2026-04-25 01:41:40,938 - comtypes.client._generate - INFO - # Generating comtypes.gen.SpeechLib
+2026-04-25 01:41:40,946 - comtypes.client._generate - INFO - Could not import comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0: No module named 'comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0'
+2026-04-25 01:41:40,948 - comtypes.client._generate - INFO - # Generating comtypes.gen._00020430_0000_0000_C000_000000000046_0_2_0
+2026-04-25 01:41:40,955 - comtypes.client._generate - INFO - # Generating comtypes.gen.stdole
+2026-04-25 01:41:41,527 - services.alert_system - INFO - TTS engine initialized
+2026-04-25 01:41:41,527 - main - INFO - All models initialized successfully
+2026-04-25 01:47:17,331 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:48:48,761 - watchfiles.main - INFO - 6 changes detected
+2026-04-25 01:49:23,225 - main - INFO - Initializing models...
+2026-04-25 01:49:23,227 - models.enhancer - INFO - Zero-DCE model loaded
+2026-04-25 01:49:23,295 - watchfiles.main - INFO - 5 changes detected
+2026-04-25 01:49:32,388 - models.depth_estimator - INFO - MiDaS DPT Large model loaded
+2026-04-25 01:49:32,426 - models.object_detector - INFO - YOLOv8 model loaded
+2026-04-25 01:49:32,469 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientnet_b0.ra_in1k)
+2026-04-25 01:49:33,074 - timm.models._hub - INFO - [timm/efficientnet_b0.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-04-25 01:49:33,175 - models.pothole_detector - INFO - Using pretrained EfficientNet (not fine-tuned for potholes)
+2026-04-25 01:49:33,263 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\anujs\\Miniconda3\\envs\\fed_iomt\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-25 01:49:33,263 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 01:49:33,396 - services.alert_system - INFO - TTS engine initialized
+2026-04-25 01:49:33,396 - main - INFO - All models initialized successfully
+2026-04-25 01:49:44,186 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:44,278 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:44,365 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:44,477 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:44,572 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:44,667 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:44,776 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:44,863 - main - ERROR - Prediction error: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\imgcodecs\src\loadsave.cpp:802: error: (-215:Assertion failed) !buf.empty() in function 'cv::imdecode_'
+
+2026-04-25 01:49:45,449 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:49:55,361 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:49:59,476 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:03,309 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:07,437 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:11,560 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:15,574 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:19,402 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:23,213 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:27,310 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:31,356 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:35,265 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:39,317 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:43,454 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:47,616 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:51,942 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:50:56,191 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:51:00,159 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:56:38,955 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:56:48,193 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:56:52,062 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:56:55,958 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:56:59,837 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:57:03,715 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:57:07,352 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 01:58:50,458 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:59:02,136 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:59:14,780 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:59:14,794 - main - INFO - Initializing models...
+2026-04-25 01:59:14,797 - models.enhancer - INFO - Zero-DCE model loaded
+2026-04-25 01:59:15,141 - watchfiles.main - INFO - 6 changes detected
+2026-04-25 01:59:26,854 - models.depth_estimator - INFO - MiDaS DPT Large model loaded
+2026-04-25 01:59:26,978 - models.object_detector - INFO - YOLOv8 model loaded
+2026-04-25 01:59:27,121 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientnet_b0.ra_in1k)
+2026-04-25 01:59:28,452 - timm.models._hub - INFO - [timm/efficientnet_b0.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-04-25 01:59:28,644 - models.pothole_detector - INFO - Using pretrained EfficientNet (not fine-tuned for potholes)
+2026-04-25 01:59:28,764 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\anujs\\Miniconda3\\envs\\fed_iomt\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-25 01:59:28,764 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 01:59:29,118 - services.alert_system - INFO - TTS engine initialized
+2026-04-25 01:59:29,119 - main - INFO - All models initialized successfully
+2026-04-25 01:59:34,057 - watchfiles.main - INFO - 5 changes detected
+2026-04-25 01:59:35,384 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:59:37,725 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:59:49,686 - watchfiles.main - INFO - 1 change detected
+2026-04-25 01:59:49,740 - main - INFO - Initializing models...
+2026-04-25 01:59:49,743 - models.enhancer - INFO - Zero-DCE model loaded
+2026-04-25 01:59:50,057 - watchfiles.main - INFO - 6 changes detected
+2026-04-25 02:00:00,935 - models.depth_estimator - INFO - MiDaS DPT Large model loaded
+2026-04-25 02:00:01,068 - models.object_detector - INFO - YOLOv8 model loaded
+2026-04-25 02:00:01,215 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientnet_b0.ra_in1k)
+2026-04-25 02:00:02,524 - timm.models._hub - INFO - [timm/efficientnet_b0.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-04-25 02:00:02,725 - models.pothole_detector - INFO - Using pretrained EfficientNet (not fine-tuned for potholes)
+2026-04-25 02:00:02,891 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\anujs\\Miniconda3\\envs\\fed_iomt\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-25 02:00:02,892 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 02:00:03,222 - services.alert_system - INFO - TTS engine initialized
+2026-04-25 02:00:03,224 - main - INFO - All models initialized successfully
+2026-04-25 02:00:35,478 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 02:00:47,729 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 02:00:51,770 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 02:00:55,694 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 02:00:59,726 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 02:01:04,102 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 02:01:07,831 - models.depth_estimator - ERROR - Depth estimation failed: unsupported operand type(s) for /: 'Image' and 'float'
+2026-04-25 02:06:14,280 - watchfiles.main - INFO - 1 change detected
+2026-04-25 02:06:43,017 - watchfiles.main - INFO - 2 changes detected
+2026-04-25 02:07:13,622 - main - INFO - Initializing models...
+2026-04-25 02:07:13,623 - models.enhancer - INFO - Zero-DCE model loaded
+2026-04-25 02:07:19,159 - models.depth_estimator - INFO - MiDaS DPT Large model loaded
+2026-04-25 02:07:19,205 - models.object_detector - INFO - YOLOv8 model loaded
+2026-04-25 02:07:19,249 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientnet_b0.ra_in1k)
+2026-04-25 02:07:19,795 - timm.models._hub - INFO - [timm/efficientnet_b0.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-04-25 02:07:19,878 - models.pothole_detector - INFO - Using pretrained EfficientNet (not fine-tuned for potholes)
+2026-04-25 02:07:19,965 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\anujs\\Miniconda3\\envs\\fed_iomt\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-25 02:07:19,966 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 02:07:20,098 - services.alert_system - INFO - TTS engine initialized
+2026-04-25 02:07:20,098 - main - INFO - All models initialized successfully
+2026-04-25 02:17:05,534 - main - INFO - Initializing models...
+2026-04-25 02:17:05,535 - models.enhancer - INFO - Zero-DCE model loaded
+2026-04-25 02:17:10,734 - models.depth_estimator - INFO - MiDaS DPT Large model loaded
+2026-04-25 02:17:10,776 - models.object_detector - INFO - YOLOv8 model loaded
+2026-04-25 02:17:10,821 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientnet_b0.ra_in1k)
+2026-04-25 02:17:11,344 - timm.models._hub - INFO - [timm/efficientnet_b0.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-04-25 02:17:11,423 - models.pothole_detector - INFO - Using pretrained EfficientNet (not fine-tuned for potholes)
+2026-04-25 02:17:11,494 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\anujs\\Miniconda3\\envs\\fed_iomt\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-25 02:17:11,495 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 02:17:11,621 - services.alert_system - INFO - TTS engine initialized
+2026-04-25 02:17:11,621 - main - INFO - All models initialized successfully
+2026-04-25 02:18:37,018 - watchfiles.main - INFO - 1 change detected

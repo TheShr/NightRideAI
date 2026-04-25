@@ -1,0 +1,17 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+opencv-python==4.8.1.78
+torch==2.1.1
+torchvision==0.16.1
+ultralytics==8.0.227
+numpy==1.24.3
+pillow==10.1.0
+scipy==1.11.3
+matplotlib==3.8.0
+timm==0.9.10
+pyttsx3==2.90
+python-multipart==0.0.6
+websockets==12.0
+aiofiles==23.2.1
+pydantic==2.5.0
+requests==2.31.0

@@ -145,7 +145,7 @@ The pothole detection module is trained on a custom curated dataset of real-worl
 
 > Single-class (`pothole`) dataset with 4,000+ annotated instances.
 
-![Label Distribution](labels.jpg)
+![Label Distribution](runs/detect/train2/labels.jpg)
 
 - **Top-left:** Instance count per class — exclusively `pothole`, confirming a focused single-class detection task.
 - **Top-right:** Bounding box overlay across all annotations, showing potholes distributed across the full frame area with high positional diversity.
@@ -154,7 +154,7 @@ The pothole detection module is trained on a custom curated dataset of real-worl
 
 ### Label Correlogram
 
-![Label Correlogram](labels_correlogram.jpg)
+![Label Correlogram](runs/detect/train2/labels_correlogram.jpg)
 
 The correlogram reveals key structural patterns in the dataset:
 - **x and y distributions** are approximately bell-curved, peaking near 0.5 — potholes tend to appear centrally in the frame.
@@ -166,13 +166,13 @@ The correlogram reveals key structural patterns in the dataset:
 The training set includes a rich variety of real-world road conditions: cracked asphalt, waterlogged potholes, gravel patches, night-time roads, and construction debris — all with annotated bounding boxes.
 
 **Batch 0**
-![Train Batch 0](train_batch0.jpg)
+![Train Batch 0](runs/detect/train2/train_batch0.jpg)
 
 **Batch 1**
-![Train Batch 1](train_batch1.jpg)
+![Train Batch 1](runs/detect/train2/train_batch1.jpg)
 
 **Batch 2**
-![Train Batch 2](train_batch2.jpg)
+![Train Batch 2](runs/detect/train2/train_batch2.jpg)
 
 ---
 

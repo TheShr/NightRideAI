@@ -24,7 +24,13 @@ class Config:
         self.depth_model = 'midas_dpt_large'
 
         # Object detection
-        self.yolo_model = 'yolov8n.pt'
+        self.yolo_model = os.path.join(self.models_dir, 'yolov8n.pt')
+
+        # Prefer custom trained YOLO best model if available
+        repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+        custom_best = os.path.join(repo_root, 'runs', 'detect', 'train2', 'weights', 'best.pt')
+        if os.path.exists(custom_best):
+            self.yolo_model = custom_best
 
         # Pothole detection
         self.pothole_model_path = os.path.join(self.models_dir, 'pothole_efficientnet.pth')

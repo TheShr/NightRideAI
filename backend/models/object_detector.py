@@ -5,7 +5,6 @@ Uses YOLOv8 for object detection
 
 import cv2
 import numpy as np
-from ultralytics import YOLO
 import logging
 
 from utils.config import Config
@@ -23,8 +22,9 @@ class ObjectDetector:
     def _load_model(self):
         """Load YOLO model"""
         try:
+            from ultralytics import YOLO
             self.model = YOLO(self.config.yolo_model)
-            logger.info("YOLOv8 model loaded")
+            logger.info(f"YOLOv8 model loaded from {self.config.yolo_model}")
 
         except Exception as e:
             logger.error(f"Failed to load YOLO model: {e}")
@@ -36,28 +36,22 @@ class ObjectDetector:
             return []
 
         try:
-            # Run inference
-            results = self.model(image, conf=0.5, classes=[0, 1, 2, 16, 17])  # person, bicycle, car, dog, horse
+            # Run inference on all available classes
+            results = self.model(image, conf=0.35)
 
             detections = []
             for result in results:
+                names = result.names if hasattr(result, 'names') else {}
                 boxes = result.boxes
                 for box in boxes:
                     # Get box coordinates
                     x1, y1, x2, y2 = box.xyxy[0].cpu().numpy()
                     conf = box.conf[0].cpu().numpy()
                     cls = int(box.cls[0].cpu().numpy())
-
-                    class_names = {
-                        0: 'person',
-                        1: 'bicycle',
-                        2: 'car',
-                        16: 'dog',
-                        17: 'horse'
-                    }
+                    class_name = names.get(cls, str(cls))
 
                     detections.append({
-                        'class': class_names.get(cls, 'unknown'),
+                        'class': class_name,
                         'confidence': float(conf),
                         'bbox': [int(x1), int(y1), int(x2), int(y2)]
                     })

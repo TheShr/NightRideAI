@@ -141,3 +141,15 @@
 2026-04-25 02:17:11,621 - services.alert_system - INFO - TTS engine initialized
 2026-04-25 02:17:11,621 - main - INFO - All models initialized successfully
 2026-04-25 02:18:37,018 - watchfiles.main - INFO - 1 change detected
+2026-04-25 19:58:26,926 - main - INFO - Initializing models...
+2026-04-25 19:58:26,927 - models.enhancer - INFO - Zero-DCE model loaded
+2026-04-25 19:58:33,361 - models.depth_estimator - INFO - MiDaS DPT Large model loaded
+2026-04-25 19:58:33,438 - models.object_detector - INFO - YOLOv8 model loaded
+2026-04-25 19:58:33,504 - timm.models._builder - INFO - Loading pretrained weights from Hugging Face hub (timm/efficientnet_b0.ra_in1k)
+2026-04-25 19:58:35,377 - timm.models._hub - INFO - [timm/efficientnet_b0.ra_in1k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2026-04-25 19:58:35,528 - models.pothole_detector - INFO - Using pretrained EfficientNet (not fine-tuned for potholes)
+2026-04-25 19:58:35,646 - comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'C:\\Users\\anujs\\Miniconda3\\envs\\fed_iomt\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2026-04-25 19:58:35,647 - comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'C:\Users\anujs\Miniconda3\envs\fed_iomt\lib\site-packages\comtypes\gen'
+2026-04-25 19:58:35,967 - services.alert_system - INFO - TTS engine initialized
+2026-04-25 19:58:35,967 - main - INFO - All models initialized successfully
+2026-04-25 19:59:43,465 - watchfiles.main - INFO - 1 change detected

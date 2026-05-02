@@ -7,6 +7,7 @@ function App() {
   const [isConnected, setIsConnected] = useState(false);
   const [currentFrame, setCurrentFrame] = useState(null);
   const [detections, setDetections] = useState([]);
+  const [potholes, setPotholes] = useState([]);
   const [hazards, setHazards] = useState([]);
   const [alerts, setAlerts] = useState([]);
   const [fps, setFps] = useState(0);
@@ -83,6 +84,7 @@ function App() {
 
     setCurrentFrame(null);
     setDetections([]);
+    setPotholes([]);
     setHazards([]);
     setAlerts([]);
     setFps(0);
@@ -129,6 +131,7 @@ function App() {
       );
 
       setDetections(response.data.detections || []);
+      setPotholes(response.data.potholes || []);
       setHazards(response.data.hazards || []);
       setAlerts(response.data.alerts || []);
       setFps(response.data.fps || 0);
@@ -169,6 +172,7 @@ function App() {
           isConnected={isConnected}
           currentFrame={currentFrame}
           detections={detections}
+          potholes={potholes}
           hazards={hazards}
           alerts={alerts}
           fps={fps}

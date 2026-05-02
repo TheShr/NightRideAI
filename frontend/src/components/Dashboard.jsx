@@ -5,12 +5,15 @@ const Dashboard = ({
   isConnected,
   currentFrame,
   detections,
+  potholes,
   hazards,
   alerts,
   fps,
   onStartProcessing,
   onStopProcessing,
 }) => {
+  const IMAGE_WIDTH = 640;
+  const IMAGE_HEIGHT = 480;
   const [isProcessing, setIsProcessing] = useState(false);
 
   const handleStart = () => {
@@ -69,11 +72,55 @@ const Dashboard = ({
             style={{ height: "400px" }}
           >
             {currentFrame ? (
-              <img
-                src={`data:image/jpeg;base64,${currentFrame}`}
-                alt="Enhanced camera feed"
-                className="w-full h-full object-cover"
-              />
+              <>
+                <img
+                  src={`data:image/jpeg;base64,${currentFrame}`}
+                  alt="Enhanced camera feed"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 pointer-events-none">
+                  {(potholes || []).map((pothole, index) => {
+                    const [x1, y1, x2, y2] = pothole.bbox || [0, 0, 0, 0];
+                    return (
+                      <div
+                        key={`pothole-box-${index}`}
+                        className="absolute border-2 border-red-500 bg-red-500/10 text-red-100"
+                        style={{
+                          left: `${(x1 / IMAGE_WIDTH) * 100}%`,
+                          top: `${(y1 / IMAGE_HEIGHT) * 100}%`,
+                          width: `${((x2 - x1) / IMAGE_WIDTH) * 100}%`,
+                          height: `${((y2 - y1) / IMAGE_HEIGHT) * 100}%`,
+                        }}
+                      >
+                        <span className="absolute top-0 left-0 px-1 text-[10px] font-bold">
+                          Pothole
+                        </span>
+                      </div>
+                    );
+                  })}
+                  {(detections || [])
+                    .filter((item) => item.class?.toLowerCase().includes("pothole"))
+                    .map((item, index) => {
+                      const [x1, y1, x2, y2] = item.bbox || [0, 0, 0, 0];
+                      return (
+                        <div
+                          key={`pothole-detection-${index}`}
+                          className="absolute border-2 border-yellow-400 bg-yellow-400/10 text-yellow-100"
+                          style={{
+                            left: `${(x1 / IMAGE_WIDTH) * 100}%`,
+                            top: `${(y1 / IMAGE_HEIGHT) * 100}%`,
+                            width: `${((x2 - x1) / IMAGE_WIDTH) * 100}%`,
+                            height: `${((y2 - y1) / IMAGE_HEIGHT) * 100}%`,
+                          }}
+                        >
+                          <span className="absolute top-0 left-0 px-1 text-[10px] font-bold">
+                            Pothole
+                          </span>
+                        </div>
+                      );
+                    })}
+                </div>
+              </>
             ) : (
               <div className="flex items-center justify-center h-full text-gray-500">
                 No feed available

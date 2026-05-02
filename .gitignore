@@ -1,0 +1,26 @@
+# Ignore dataset folder entirely
+datasets/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Logs
+*.log
+backend/logs/
+
+# Virtual envs
+venv/
+.env
+
+# Node modules
+node_modules/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db

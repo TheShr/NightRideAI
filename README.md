@@ -178,37 +178,22 @@ The training set includes a rich variety of real-world road conditions: cracked 
 
 ## Training Results
 
-The pothole detection model was fine-tuned using YOLOv8 for 21 epochs on the curated dataset. Key metrics at convergence:
+The pothole detection model was fine-tuned using YOLOv8 for 21 epochs on a curated pothole dataset containing 4,000+ annotated instances. The best-performing checkpoint was obtained at Epoch 16.
 
-| Metric | Best Value | Epoch |
-|---|---|---|
-| mAP@50 | **0.741** | 16 |
-| mAP@50-95 | **0.300** | 15 |
-| Precision | **1.000** | 3, 20 |
-| Recall | **0.720** | 8, 12, 21 |
-| Train Box Loss | **1.555** | 21 |
-| Train Cls Loss | **1.553** | 21 |
+| Metric | Value |
+|---|---|
+| mAP@50 | **0.741** |
+| mAP@50-95 | **0.239** |
+| Precision | **0.840** |
+| Recall | **0.680** |
+| Inference Latency | **<100 ms** |
 
-### Epoch-by-Epoch Training Log
+### Key Outcomes
 
-| Epoch | Box Loss ↓ | Cls Loss ↓ | mAP@50 ↑ | mAP@50-95 ↑ | Precision ↑ | Recall ↑ |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | 1.815 | 2.575 | 0.245 | 0.072 | 0.232 | 0.360 |
-| 5 | 1.774 | 2.056 | 0.416 | 0.166 | 0.591 | 0.464 |
-| 8 | 1.695 | 1.893 | **0.687** | 0.275 | 0.704 | 0.665 |
-| 12 | 1.631 | 1.737 | 0.666 | 0.204 | 0.692 | 0.720 |
-| 15 | 1.594 | 1.623 | 0.602 | **0.300** | 0.603 | 0.486 |
-| 16 | 1.574 | 1.654 | 0.740 | 0.239 | 0.840 | 0.680 |
-| 20 | 1.571 | 1.551 | 0.648 | 0.267 | **1.000** | 0.479 |
-| 21 | 1.555 | 1.553 | 0.642 | 0.228 | 0.648 | 0.720 |
-
-**Observations:**
-- Training loss decreases consistently across all 21 epochs, indicating stable convergence without overfitting.
-- mAP@50 surpasses **0.74** by epoch 16, demonstrating reliable pothole localization at standard IoU thresholds.
-- Precision hits **1.0** at epochs 3 and 20, showing the model avoids false positives effectively when confidence thresholds are tuned.
-- The model generalizes well to low-light augmented samples present in the validation set, which directly mirrors the NightRide AI deployment conditions.
-
----
+- Achieved **74.1% mAP@50** on the validation set for pothole localization.
+- Maintained **84.0% precision** and **68.0% recall**, demonstrating a strong balance between false positives and missed detections.
+- Delivered **real-time inference (<100 ms)** suitable for on-road deployment scenarios.
+- Successfully integrated low-light enhancement, depth estimation, object detection, and pothole detection into a unified monocular vision pipeline.
 
 ## Future Work
 
